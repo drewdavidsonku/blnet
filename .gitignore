@@ -1,5 +1,6 @@
 # Processed Data Including OCR books
 data/
+vendor/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
