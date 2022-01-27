@@ -1,6 +1,10 @@
 # Processed Data Including OCR books
 data/
+
+#blnet PHP unecessary files
 vendor/
+composer.json
+composer.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
