@@ -66,22 +66,6 @@ foreach($results as $bookData) {
 	$bookAuth = $bookData['author'];
 	print "<li><a href=/collection?text=\"$bookName\">$bookName</a> by $bookAuth</li>";
 }
-
-$handle=fopen(__ROOT__."data/BBIP-2021-10.csv", "r");
-$i = 0;
-$text_found = false;
-while($data = fgetcsv($handle)){
-	$seek_textNum = htmlspecialchars($data[0]);
-	$seek_author = htmlspecialchars($data[1]);
-	$seek_title = htmlspecialchars($data[2]);
-	if ($seek_title == "Title"){ continue; }
-	if ($seek_title == ""){ continue; }
-	if ($seek_author == ""){ $seek_author = "(unknown)"; }
-	if (rand(1,100)	> 50){
-					# print "<li><a href=/collection?text=$seek_textNum>$seek_title</a> by $seek_author</li>";
-	}
-
-}
 ?>
 									</ul>
 
